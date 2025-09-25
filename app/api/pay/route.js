@@ -42,7 +42,7 @@ export const POST = async (req) => {
         businessShortCode: ShortCode,
         Password: password,
         Timestamp: timeStamp,
-        transactionType: "customerPayBillOnline",
+        transactionType: "CustomerPayBillOnline",
         Amount: amount,
         PartyA: phone,
         PartyB: ShortCode,
