@@ -37,7 +37,7 @@ export const POST = async (req) => {
     );
 
     const STKResponse = await axios.post(
-      "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest",
+      " https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest",
       {
         businessShortCode: ShortCode,
         Password: password,
