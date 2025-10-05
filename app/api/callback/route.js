@@ -1,7 +1,7 @@
-export const POST = async () => {
+export const GET = async () => {
   try {
     // what safaricom sends back
-    const body = await req.json();
+    const body = await req.body.json();
 
     console.log(
       `callback data from safaricom: `,
