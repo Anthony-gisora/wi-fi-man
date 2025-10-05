@@ -10,7 +10,7 @@ export const POST = async (req) => {
     const consumerSecret = process.env.MPESA_CONSUMER_SECRET;
     const ShortCode = process.env.MPESA_SHORTCODE;
     const PassKey = process.env.MPESA_PASSKEY;
-    const consumerCallBackUrl = process.env.MPESA_CALLBACK_URL;
+    const callBackUrl = process.env.MPESA_CALLBACK_URL;
 
     // access token
     const auth = Buffer.from(`${consumerKey}:${consumerSecret}`).toString(
@@ -47,7 +47,7 @@ export const POST = async (req) => {
         PartyA: phone,
         PartyB: ShortCode,
         phoneNumber: phone,
-        CallbackURL: callbackURL,
+        CallbackURL: callBackUrl,
         AccountReference: "wifi-sub",
         TransactionDesc: "Wifi Subscription",
       },
